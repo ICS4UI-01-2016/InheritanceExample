@@ -32,4 +32,8 @@ public abstract class Pet {
     public int getAge(){
         return this.age;
     }
+    
+    
+    public abstract void speak();
+    
 }

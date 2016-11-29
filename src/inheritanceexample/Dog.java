@@ -23,4 +23,20 @@ public class Dog extends Pet{
                + "   Colour: " + this.getColour(); 
        return output;
     }
+    
+    @Override
+    public void speak(){
+        System.out.println("WOOF"); 
+    }
+    
+    /**
+     * Gets the age in dog years
+     * @return int the age in dog years
+     */
+    @Override
+    public int getAge(){
+        // grab the age from pet
+        int oldAge = super.getAge();
+        return oldAge * 7;
+    }
 }

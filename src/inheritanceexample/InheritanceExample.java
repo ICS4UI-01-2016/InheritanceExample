@@ -16,8 +16,8 @@ public class InheritanceExample {
      */
     public static void main(String[] args) {
         Dog dog = new Dog("Buddy", 7, "White");
-        Cat cat = new Cat("Fluffy" , 5, "Black" , 9);
-        Cat cat2 = new Cat("Spike" , 2, "Brown" , 9);
+        Cat cat = new Cat("Fluffy" , 5, "Black" );
+        Cat cat2 = new Cat("Spike" , 2, "Brown" , 6);
         Dog dog2 = new Dog("Gidget", 1, "Brindle");
         
         Pet[] pets = {dog, cat, dog2, cat2};
@@ -26,6 +26,7 @@ public class InheritanceExample {
         for(Pet pet: pets){
             // prints out the pet
             System.out.println(pet);
+            pet.speak();
             
             // checking if the pet is actually a cat
             if(pet instanceof Cat){

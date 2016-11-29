@@ -21,6 +21,11 @@ public class Cat extends Pet{
         this.lives = lives;
     }
     
+    public Cat(String name, int age, String colour){
+        super(name, age, colour);
+        this.lives = 9;
+    }
+    
     public int getLives(){
         return this.lives;
     }
@@ -32,5 +37,10 @@ public class Cat extends Pet{
                + "   Colour: " + this.getColour()
                + "   Lives: " + this.lives; 
        return output;
+    }
+    
+    @Override
+    public void speak(){
+        System.out.println("MEOW");
     }
 }
